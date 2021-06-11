@@ -11,7 +11,7 @@ use function FastRoute\simpleDispatcher;
 
 class 🪔
 {
-    private array $ℹ;
+    private array $🛣️;
 
     public function __invoke()
     {
@@ -33,26 +33,26 @@ class 🪔
         }
         $🕸 = rawurldecode($🕸);
 
-        $this->ℹ = simpleDispatcher(include __DIR__ . '/../⚙️/🚕.php')->dispatch($🕷, $🕸);
+        $this->🛣️ = simpleDispatcher(include __DIR__ . '/../⚙️/🚕.php')->dispatch($🕷, $🕸);
 
-        if ($this->ℹ[0] !== Dispatcher::FOUND) {
+        if ($this->🛣️[0] !== Dispatcher::FOUND) {
             throw new \🧞\💣\👀('🛑', 404);
         }
     }
 
     private function 👮‍()
     {
-        if (!isset($this->ℹ[1])) {
+        if (!isset($this->🛣️[1])) {
             throw new \🧞\💣\👀('🛑👮', 404);
         }
-        return $this->ℹ[1];
+        return $this->🛣️[1];
     }
 
     private function 🪣()
     {
-        if (!isset($this->ℹ[2])) {
+        if (!isset($this->🛣️[2])) {
             throw new \🧞\💣\👀('🛑🪣', 404);
         }
-        return $this->ℹ[2];
+        return $this->🛣️[2];
     }
 }
