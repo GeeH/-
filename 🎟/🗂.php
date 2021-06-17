@@ -1,6 +1,8 @@
 <?php
 
-declare(strict_types=1);
+define("1️⃣", 1);
+
+declare(strict_types=1️⃣);
 
 use 🧞\🪔;
 
