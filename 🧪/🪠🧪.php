@@ -8,8 +8,8 @@ use 🧞\🪠;
 
 class 🪠🧪 extends TestCase
 {
-
-    public function test_invoke_sets_headers_and_returns_exception_message()
+    /** @test **/
+    public function 🧪_🪠_✅()
     {
         $🖕 = '🖕';
 

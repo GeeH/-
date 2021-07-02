@@ -12,16 +12,14 @@ use function FastRoute\simpleDispatcher;
 class 🪔
 {
     private array $🛣️;
+    private array $🧙⚙️;
 
-    public function __invoke()
+    public function __invoke(array $🧙⚙️): string
     {
+        $this->🧙⚙️ = $🧙⚙️;
         $this->🚚();
-        return $this->🧙()->get($this->👮‍())($this->🪣());
-    }
 
-    private function 🧙(): ServiceManager
-    {
-        return new ServiceManager(include __DIR__ . '/../⚙️/🦮.php');
+        return $this->👮‍()($this->🪣());
     }
 
     private function 🚚(): void
@@ -33,26 +31,25 @@ class 🪔
         }
         $🕸 = rawurldecode($🕸);
 
-        $this->🛣️ = simpleDispatcher(include __DIR__ . '/../⚙️/🚕.php')->dispatch($🕷, $🕸);
+        $this->🛣️ = simpleDispatcher($this->🧙()->get('🚕⚙️'))->dispatch($🕷, $🕸);
 
         if ($this->🛣️[0] !== Dispatcher::FOUND) {
-            throw new \🧞\💣\👀('🛑', 404);
+            throw new \🧞\💣\👀('🛑🛣', 404);
         }
     }
 
-    private function 👮‍()
+    private function 🧙(): ServiceManager
     {
-        if (!isset($this->🛣️[1])) {
-            throw new \🧞\💣\👀('🛑👮', 404);
-        }
-        return $this->🛣️[1];
+        return new ServiceManager($this->🧙⚙️);
+    }
+
+    private function 👮‍(): callable
+    {
+        return $this->🧙()->get($this->🛣️[1]);
     }
 
     private function 🪣()
     {
-        if (!isset($this->🛣️[2])) {
-            throw new \🧞\💣\👀('🛑🪣', 404);
-        }
         return $this->🛣️[2];
     }
 }

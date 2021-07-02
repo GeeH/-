@@ -16,15 +16,22 @@
         "twig/twig": "^3.0"
     },
     "scripts": {
-        "serve": "php -S 0.0.0.0:8080 -t \uD83C\uDF9F/ 🎟/\uD83E\uDDDE.php"
+        "💁": "php -S 0.0.0.0:8080 -t \uD83C\uDF9F/ 🎟/\uD83E\uDDDE.php",
+        "🧪": "📦/bin/phpunit --testdox",
+        "🧪🙈": "📦/bin/phpunit --coverage-html=🙈"
     },
     "autoload": {
         "psr-4": {
-            "\uD83E\uDDDE\\": "🍅/"
+            "🧞\\": "🍅/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "🧪\\": "🧪/"
         }
     },
     "config": {
-        "vendor-dir": "\uD83D\uDCE6"
+        "vendor-dir": "📦"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"

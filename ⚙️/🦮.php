@@ -8,6 +8,9 @@ return [
             $📍 = new \Twig\Loader\FilesystemLoader(__DIR__.'/../🍃');
             return new \Twig\Environment($📍, []);
         },
+        '🚕⚙️' => function() {
+            return include __DIR__ . '/🚕.php';
+        }
     ],
 
     'abstract_factories' => [

@@ -7,7 +7,7 @@ use 🧞\🪔;
 require_once(__DIR__.'/../📦/autoload.php');
 
 try {
-    echo (new 🪔())();
+    echo (new 🪔())(include __DIR__.'/../⚙️/🦮.php');
 } catch (\🧞\💣\💥 $💩) {
     $🪠 = new \🧞\🪠();
     echo $🪠($💩);
