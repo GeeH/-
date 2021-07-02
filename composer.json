@@ -10,16 +10,20 @@
         }
     ],
     "require": {
+        "php": "^8.0",
         "laminas/laminas-servicemanager": "^3.6",
         "nikic/fast-route": "^1.3",
         "twig/twig": "^3.0"
     },
     "scripts": {
-        "serve": "php -S 0.0.0.0:8080 -t \uD83C\uDF9F/ 🎟/🗂.php"
+        "serve": "php -S 0.0.0.0:8080 -t \uD83C\uDF9F/ 🎟/\uD83E\uDDDE.php"
     },
     "autoload": {
         "psr-4": {
             "\uD83E\uDDDE\\": "🍅/"
         }
+    },
+    "config": {
+        "vendor-dir": "\uD83D\uDCE6"
     }
 }
