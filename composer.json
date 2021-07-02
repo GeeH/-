@@ -25,5 +25,8 @@
     },
     "config": {
         "vendor-dir": "\uD83D\uDCE6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
