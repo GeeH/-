@@ -21,5 +21,13 @@
         "psr-4": {
             "\uD83E\uDDDE\\": "🍅/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "🧪\\": "🧪/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }

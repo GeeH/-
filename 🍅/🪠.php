@@ -8,9 +8,7 @@ use 🧞\💣\💥;
 
 class 🪠
 {
-    public function __construct() { }
-
-    public function __invoke(💥 $💥)
+    public function __invoke(💥 $💥): string
     {
         http_response_code($💥->getCode());
         return $💥->getMessage();

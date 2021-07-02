@@ -1,0 +1,1 @@
+{"version":1,"defects":{"\ud83e\uddea\\\ud83e\udea0\ud83e\uddea::test__invoke":3,"\ud83e\uddea\\\ud83e\udea0\ud83e\uddea::test_invoke_sets_headers_and_returns_exception_message":4},"times":{"\ud83e\uddea\\\ud83e\udea0\ud83e\uddea::test__invoke":0.007,"\ud83e\uddea\\\ud83e\udea0\ud83e\uddea::test_invoke_sets_headers_and_returns_exception_message":0.002}}
